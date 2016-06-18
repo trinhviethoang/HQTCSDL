@@ -1,0 +1,5 @@
+   CREATE OR REPLACE FUNCTION inserttest(id int, hoten character varying (50), email character varying(50)) RETURNS void  AS $$
+    BEGIN
+       INSERT INTO xxx VALUES (id, hoten, email);
+    END;
+    $$ LANGUAGE plpgsql;
